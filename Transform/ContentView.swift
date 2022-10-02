@@ -6,11 +6,21 @@
 //
 
 import SwiftUI
+import Charts
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Chart {
+                ForEach() { item in
+                    LineMark(
+                        x: .value("Month", item.date),
+                        y: .value("Temp", item.temperature)
+                    )
+                }
+            }
+            .frame(height: 300)
+        }
     }
 }
 
