@@ -10,17 +10,18 @@ import Charts
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Chart {
-                ForEach() { item in
-                    LineMark(
-                        x: .value("Month", item.date),
-                        y: .value("Temp", item.temperature)
-                    )
-                }
-            }
-            .frame(height: 300)
-        }
+        Text("Hello World!")
+//        VStack {
+//            Chart {
+//                ForEach() { item in
+//                    LineMark(
+//                        x: .value("Month", item.date),
+//                        y: .value("Temp", item.temperature)
+//                    )
+//                }
+//            }
+//            .frame(height: 300)
+//        }
     }
 }
 
