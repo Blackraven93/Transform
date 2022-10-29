@@ -30,5 +30,12 @@ ex)
 
 <br/>
 
+## 📸 구현 부분에 대한 스크린샷을 첨부합니다.
+<img width="353" alt="Screenshot 2022-10-29 at 9 11 00 PM" src="https://user-images.githubusercontent.com/61782746/198830648-428e3080-1c7d-4694-bd0f-4a19fcd9d7fc.png">
+
+
+
+<br/>
+
 ## 📝  기타 사항이 있을 때 작성합니다.
 설문지 작성에 대한 애니메이션이 추가로 있었으면 좋겠습니다.
