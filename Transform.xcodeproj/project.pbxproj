@@ -17,6 +17,7 @@
 		111245C528F5219C0096809A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111245C428F5219C0096809A /* LoginView.swift */; };
 		112660EF290D1E4200009E30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 112660EE290D1E4200009E30 /* GoogleService-Info.plist */; };
 		112660F3290D3FD300009E30 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112660F2290D3FD300009E30 /* FontManager.swift */; };
+		112660F7290D468A00009E30 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112660F6290D468A00009E30 /* TabBarButton.swift */; };
 		115BC89928F84E640019B04D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115BC89828F84E640019B04D /* MainView.swift */; };
 		97296CC528E7407200693F59 /* TransformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97296CC428E7407200693F59 /* TransformApp.swift */; };
 		97296CC728E7407200693F59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97296CC628E7407200693F59 /* ContentView.swift */; };
@@ -55,6 +56,7 @@
 		112660F2290D3FD300009E30 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		112660F4290D3FEE00009E30 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		112660F5290D3FF600009E30 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		112660F6290D468A00009E30 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		115BC89828F84E640019B04D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		97296CC128E7407200693F59 /* Transform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97296CC428E7407200693F59 /* TransformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformApp.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				115BC89828F84E640019B04D /* MainView.swift */,
 				111245AF28F47DE20096809A /* MainTodoView.swift */,
 				111245B128F47DF00096809A /* MainCheckView.swift */,
+				112660F6290D468A00009E30 /* TabBarButton.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				111245B228F47DF00096809A /* MainCheckView.swift in Sources */,
 				115BC89928F84E640019B04D /* MainView.swift in Sources */,
 				111245C528F5219C0096809A /* LoginView.swift in Sources */,
+				112660F7290D468A00009E30 /* TabBarButton.swift in Sources */,
 				111245B028F47DE20096809A /* MainTodoView.swift in Sources */,
 				112660F3290D3FD300009E30 /* FontManager.swift in Sources */,
 				111245B428F47E2E0096809A /* Survey.swift in Sources */,

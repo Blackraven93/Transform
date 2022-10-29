@@ -10,63 +10,40 @@ import Firebase
 
 enum MenuList: String, CaseIterable {
     case todo = "To Do"
-    case check = "Check"
+    case check = "내가 만든 설문"
 }
 
 struct MainView: View {
-    @State var segmentationSelection: MenuList = .todo
     @AppStorage("log_status") var log_Status = false
+    @State var selectedTab = MenuList.todo.rawValue
+    @Namespace var animation
     
     var body: some View {
-        NavigationView {
+        NavigationView{
             ZStack {
-                Color("background")
-                    .ignoresSafeArea(.all)
+                Color("background").edgesIgnoringSafeArea(.all)
                 
                 VStack(spacing: 20){
-                    Picker("", selection: $segmentationSelection) {
-                        ForEach(MenuList.allCases, id: \.self) { option in
-                            Text(option.rawValue)
-                        }
-                    }
-                    .pickerStyle(SegmentedPickerStyle())
-                    .padding(.horizontal, 20)
-                    .padding(.vertical, 10)
-                    
-                    switch segmentationSelection {
-                    case .todo:
-                        MainTodoView()
-                    case .check:
-                        MainCheckView()
+                    HStack(spacing: 0){
+                        TabBarButton(current: $selectedTab, item: "To Do", animation: animation)
+                        TabBarButton(current: $selectedTab, item: "내가 만든 설문", animation: animation)
                     }
 
-                    Spacer()
+                    switch selectedTab {
+                    case MenuList.todo.rawValue:
+                        MainTodoView()
+                    default:
+                        MainCheckView()
+                    }
                     
-                    Button(action: {
-                        // Logging Out User.
-                        DispatchQueue.global(qos: .background).async {
-                            try? Auth.auth().signOut()
-                        }
-                        
-                        // Setting Back View To Login.
-                        withAnimation(.easeOut){
-                            log_Status = false
-                        }
-                        
-                    }, label: {
-                        Text("Log Out")
-                            .fontWeight(.semibold)
-                            .foregroundColor(.white)
-                            .padding(.vertical,12)
-                            .frame(width: UIScreen.main.bounds.width / 2)
-                            .background(Color.pink)
-                            .clipShape(Capsule())
-                    })
+                    Spacer()
                 }
+                .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        Text("Servay")
-                            .font(.title)
+                    ToolbarItem(placement: .principal) {
+                        Text("Bamboothon")
+                            .font(.custom(FontManager.Poppins.semibold, size: 20))
+                            .foregroundColor(Color("accentYellow"))
                             .accessibilityAddTraits(.isHeader)
                     }
                     
@@ -75,8 +52,8 @@ struct MainView: View {
                             
                         } label: {
                             NavigationLink(destination: EmptyView()) {
-                                Image(systemName: "gearshape")
-                                    .foregroundColor(.black)
+                                Image(systemName: "plus")
+                                    .foregroundColor(Color("accentYellow"))
                             }
                         }
                     }
