@@ -13,9 +13,10 @@
 		111245B928F517DB0096809A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 111245B828F517DB0096809A /* FirebaseAuth */; };
 		111245BB28F517DB0096809A /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 111245BA28F517DB0096809A /* FirebaseDatabase */; };
 		111245BD28F517DB0096809A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 111245BC28F517DB0096809A /* FirebaseFirestore */; };
-		111245BF28F518830096809A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 111245BE28F518830096809A /* GoogleService-Info.plist */; };
 		111245C228F51FE40096809A /* LoginViewMoel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111245C128F51FE40096809A /* LoginViewMoel.swift */; };
 		111245C528F5219C0096809A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111245C428F5219C0096809A /* LoginView.swift */; };
+		112660EF290D1E4200009E30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 112660EE290D1E4200009E30 /* GoogleService-Info.plist */; };
+		112660F3290D3FD300009E30 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112660F2290D3FD300009E30 /* FontManager.swift */; };
 		115BC89928F84E640019B04D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115BC89828F84E640019B04D /* MainView.swift */; };
 		97296CC528E7407200693F59 /* TransformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97296CC428E7407200693F59 /* TransformApp.swift */; };
 		97296CC728E7407200693F59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97296CC628E7407200693F59 /* ContentView.swift */; };
@@ -47,10 +48,13 @@
 		111245AF28F47DE20096809A /* MainTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTodoView.swift; sourceTree = "<group>"; };
 		111245B128F47DF00096809A /* MainCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCheckView.swift; sourceTree = "<group>"; };
 		111245B328F47E2E0096809A /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
-		111245BE28F518830096809A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		111245C128F51FE40096809A /* LoginViewMoel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewMoel.swift; sourceTree = "<group>"; };
 		111245C428F5219C0096809A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		111245C828F574860096809A /* Transform.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Transform.entitlements; sourceTree = "<group>"; };
+		112660EE290D1E4200009E30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		112660F2290D3FD300009E30 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		112660F4290D3FEE00009E30 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		112660F5290D3FF600009E30 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		115BC89828F84E640019B04D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		97296CC128E7407200693F59 /* Transform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97296CC428E7407200693F59 /* TransformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformApp.swift; sourceTree = "<group>"; };
@@ -135,6 +139,24 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		112660ED290D1E2600009E30 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				112660EE290D1E4200009E30 /* GoogleService-Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		112660F0290D3F7E00009E30 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				112660F2290D3FD300009E30 /* FontManager.swift */,
+				112660F4290D3FEE00009E30 /* Poppins-SemiBold.ttf */,
+				112660F5290D3FF600009E30 /* Poppins-Medium.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		97296CB828E7407200693F59 = {
 			isa = PBXGroup;
 			children = (
@@ -158,14 +180,15 @@
 		97296CC328E7407200693F59 /* Transform */ = {
 			isa = PBXGroup;
 			children = (
+				112660ED290D1E2600009E30 /* Config */,
 				111245C828F574860096809A /* Transform.entitlements */,
 				111245C028F51FC90096809A /* ViewModels */,
 				111245AC28F471020096809A /* Models */,
 				111245AD28F4710B0096809A /* Views */,
+				112660F0290D3F7E00009E30 /* Font */,
 				97296CC428E7407200693F59 /* TransformApp.swift */,
 				97296CC628E7407200693F59 /* ContentView.swift */,
 				97296CC828E7407500693F59 /* Assets.xcassets */,
-				111245BE28F518830096809A /* GoogleService-Info.plist */,
 				97296CCA28E7407500693F59 /* Preview Content */,
 			);
 			path = Transform;
@@ -310,7 +333,7 @@
 			files = (
 				97296CCC28E7407500693F59 /* Preview Assets.xcassets in Resources */,
 				97296CC928E7407500693F59 /* Assets.xcassets in Resources */,
-				111245BF28F518830096809A /* GoogleService-Info.plist in Resources */,
+				112660EF290D1E4200009E30 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +362,7 @@
 				115BC89928F84E640019B04D /* MainView.swift in Sources */,
 				111245C528F5219C0096809A /* LoginView.swift in Sources */,
 				111245B028F47DE20096809A /* MainTodoView.swift in Sources */,
+				112660F3290D3FD300009E30 /* FontManager.swift in Sources */,
 				111245B428F47E2E0096809A /* Survey.swift in Sources */,
 				97296CC728E7407200693F59 /* ContentView.swift in Sources */,
 				97296CC528E7407200693F59 /* TransformApp.swift in Sources */,
