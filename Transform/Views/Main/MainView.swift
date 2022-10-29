@@ -8,9 +8,9 @@
 import SwiftUI
 import Firebase
 
-enum MenuList: String, CaseIterable {
+enum MenuList: String {
     case todo = "To Do"
-    case check = "내가 만든 설문"
+    case made = "Made"
 }
 
 struct MainView: View {
@@ -26,14 +26,14 @@ struct MainView: View {
                 VStack(spacing: 20){
                     HStack(spacing: 0){
                         TabBarButton(current: $selectedTab, item: "To Do", animation: animation)
-                        TabBarButton(current: $selectedTab, item: "내가 만든 설문", animation: animation)
+                        TabBarButton(current: $selectedTab, item: "Made", animation: animation)
                     }
 
                     switch selectedTab {
-                    case MenuList.todo.rawValue:
-                        MainTodoView()
+                    case MenuList.made.rawValue:
+                        MainMadeView()
                     default:
-                        MainCheckView()
+                        MainTodoView()
                     }
                     
                     Spacer()
