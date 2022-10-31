@@ -9,17 +9,16 @@ import SwiftUI
 import Charts
 
 struct ContentView: View {
+    @AppStorage("log_status") var log_Status = false
+    
     var body: some View {
-        VStack {
-            Chart {
-                ForEach() { item in
-                    LineMark(
-                        x: .value("Month", item.date),
-                        y: .value("Temp", item.temperature)
-                    )
-                }
+        ZStack{
+            if log_Status{
+                MainView()
             }
-            .frame(height: 300)
+            else{
+                LoginView()
+            }
         }
     }
 }
