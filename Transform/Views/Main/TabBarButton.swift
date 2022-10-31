@@ -18,7 +18,7 @@ struct TabBarButton: View {
         }) {
             VStack(spacing: 5){
                 Text(item)
-                    .font(.custom(FontManager.Poppins.semibold, size: 15))
+                    .font(.poppins(.semibold, size: 15))
                     .foregroundColor(current == item ? Color("accentYellow") : Color("accentYellow").opacity(0.5))
                     .frame(height: 35)
 
