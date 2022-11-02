@@ -42,7 +42,8 @@ struct MainView: View {
                 .toolbar {
                     ToolbarItem(placement: .principal) {
                         Text("Bamboothon")
-                            .font(.custom(FontManager.Poppins.semibold, size: 20))
+                            .font(.poppins(.semibold, size: 20))
+                            .multilineTextAlignment(.leading)
                             .foregroundColor(Color("accentYellow"))
                             .accessibilityAddTraits(.isHeader)
                     }
