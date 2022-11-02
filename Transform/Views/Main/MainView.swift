@@ -23,7 +23,7 @@ struct MainView: View {
             ZStack {
                 Color("background").edgesIgnoringSafeArea(.all)
                 
-                VStack(spacing: 20){
+                VStack(spacing: 0){
                     HStack(spacing: 0){
                         TabBarButton(current: $selectedTab, item: "To Do", animation: animation)
                         TabBarButton(current: $selectedTab, item: "Made", animation: animation)
@@ -31,7 +31,7 @@ struct MainView: View {
 
                     switch selectedTab {
                     case MenuList.made.rawValue:
-                        MainMadeView()
+                        SurveyMadeView()
                     default:
                         MainTodoView()
                     }

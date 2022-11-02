@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		111245B028F47DE20096809A /* MainTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111245AF28F47DE20096809A /* MainTodoView.swift */; };
-		111245B228F47DF00096809A /* MainMadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111245B128F47DF00096809A /* MainMadeView.swift */; };
+		111245B228F47DF00096809A /* SurveyMadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111245B128F47DF00096809A /* SurveyMadeView.swift */; };
 		111245B428F47E2E0096809A /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111245B328F47E2E0096809A /* Survey.swift */; };
 		111245B928F517DB0096809A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 111245B828F517DB0096809A /* FirebaseAuth */; };
 		111245BB28F517DB0096809A /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 111245BA28F517DB0096809A /* FirebaseDatabase */; };
@@ -26,6 +26,7 @@
 		97296CD628E7407500693F59 /* TransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97296CD528E7407500693F59 /* TransformTests.swift */; };
 		97296CE028E7407500693F59 /* TransformUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97296CDF28E7407500693F59 /* TransformUITests.swift */; };
 		97296CE228E7407500693F59 /* TransformUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97296CE128E7407500693F59 /* TransformUITestsLaunchTests.swift */; };
+		972A64A6291024FA00E4B8B9 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972A64A5291024FA00E4B8B9 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,7 @@
 
 /* Begin PBXFileReference section */
 		111245AF28F47DE20096809A /* MainTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTodoView.swift; sourceTree = "<group>"; };
-		111245B128F47DF00096809A /* MainMadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMadeView.swift; sourceTree = "<group>"; };
+		111245B128F47DF00096809A /* SurveyMadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyMadeView.swift; sourceTree = "<group>"; };
 		111245B328F47E2E0096809A /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		111245C128F51FE40096809A /* LoginViewMoel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewMoel.swift; sourceTree = "<group>"; };
 		111245C428F5219C0096809A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		97296CDB28E7407500693F59 /* TransformUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransformUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97296CDF28E7407500693F59 /* TransformUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformUITests.swift; sourceTree = "<group>"; };
 		97296CE128E7407500693F59 /* TransformUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		972A64A5291024FA00E4B8B9 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +173,7 @@
 		112660F9290D5A5800009E30 /* Made */ = {
 			isa = PBXGroup;
 			children = (
-				111245B128F47DF00096809A /* MainMadeView.swift */,
+				111245B128F47DF00096809A /* SurveyMadeView.swift */,
 			);
 			path = Made;
 			sourceTree = "<group>";
@@ -199,6 +201,7 @@
 		97296CC328E7407200693F59 /* Transform */ = {
 			isa = PBXGroup;
 			children = (
+				972A64A4291022D600E4B8B9 /* Extension */,
 				112660ED290D1E2600009E30 /* Config */,
 				111245C828F574860096809A /* Transform.entitlements */,
 				111245C028F51FC90096809A /* ViewModels */,
@@ -236,6 +239,14 @@
 				97296CE128E7407500693F59 /* TransformUITestsLaunchTests.swift */,
 			);
 			path = TransformUITests;
+			sourceTree = "<group>";
+		};
+		972A64A4291022D600E4B8B9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				972A64A5291024FA00E4B8B9 /* Color.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,8 +388,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				111245B228F47DF00096809A /* MainMadeView.swift in Sources */,
+				111245B228F47DF00096809A /* SurveyMadeView.swift in Sources */,
 				115BC89928F84E640019B04D /* MainView.swift in Sources */,
+				972A64A6291024FA00E4B8B9 /* Color.swift in Sources */,
 				111245C528F5219C0096809A /* LoginView.swift in Sources */,
 				112660F7290D468A00009E30 /* TabBarButton.swift in Sources */,
 				111245B028F47DE20096809A /* MainTodoView.swift in Sources */,
