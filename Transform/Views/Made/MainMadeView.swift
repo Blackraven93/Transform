@@ -7,7 +7,18 @@
 
 import SwiftUI
 
-
+struct CustomButton: View {
+    var buttonText: String
+    var body: some View {
+        Button(buttonText) {
+            
+        }
+        .frame(width: 166, height: 50)
+        .background(Color.accentBlack)
+        .foregroundColor(Color.accentYellow)
+        .cornerRadius(14)
+    }
+}
 
 struct MainMadeView: View {
     var body: some View {
@@ -35,21 +46,9 @@ struct MainMadeView: View {
             Spacer()
             
             HStack {
-                Button("결과 확인") {
-                    
-                }
-                .frame(width: 166, height: 50)
-                .background(Color.accentBlack)
-                .foregroundColor(Color.accentYellow)
-                .cornerRadius(14)
+                CustomButton(buttonText: "결과 확인")
                 Spacer()
-                Button("수정하기") {
-                    
-                }
-                .frame(width: 166, height: 50)
-                .background(Color.accentBlack)
-                .foregroundColor(Color.accentYellow)
-                .cornerRadius(14)
+                CustomButton(buttonText: "수정하기")
             }.padding(.bottom, 36)
         }
         .frame(height: 317)
