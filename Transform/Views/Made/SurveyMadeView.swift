@@ -20,7 +20,7 @@ struct CustomButton: View {
     }
 }
 
-struct MainMadeView: View {
+struct SurveyMadeView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -57,8 +57,8 @@ struct MainMadeView: View {
     }
 }
 
-struct MainMadeView_Previews: PreviewProvider {
+struct SurveyMadeView_Previews: PreviewProvider {
     static var previews: some View {
-        MainMadeView()
+        SurveyMadeView()
     }
 }

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		111245B028F47DE20096809A /* MainTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111245AF28F47DE20096809A /* MainTodoView.swift */; };
-		111245B228F47DF00096809A /* MainMadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111245B128F47DF00096809A /* MainMadeView.swift */; };
+		111245B228F47DF00096809A /* SurveyMadeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111245B128F47DF00096809A /* SurveyMadeView.swift */; };
 		111245B428F47E2E0096809A /* Survey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111245B328F47E2E0096809A /* Survey.swift */; };
 		111245B928F517DB0096809A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 111245B828F517DB0096809A /* FirebaseAuth */; };
 		111245BB28F517DB0096809A /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 111245BA28F517DB0096809A /* FirebaseDatabase */; };
@@ -48,7 +48,7 @@
 
 /* Begin PBXFileReference section */
 		111245AF28F47DE20096809A /* MainTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTodoView.swift; sourceTree = "<group>"; };
-		111245B128F47DF00096809A /* MainMadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMadeView.swift; sourceTree = "<group>"; };
+		111245B128F47DF00096809A /* SurveyMadeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyMadeView.swift; sourceTree = "<group>"; };
 		111245B328F47E2E0096809A /* Survey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survey.swift; sourceTree = "<group>"; };
 		111245C128F51FE40096809A /* LoginViewMoel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewMoel.swift; sourceTree = "<group>"; };
 		111245C428F5219C0096809A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -173,7 +173,7 @@
 		112660F9290D5A5800009E30 /* Made */ = {
 			isa = PBXGroup;
 			children = (
-				111245B128F47DF00096809A /* MainMadeView.swift */,
+				111245B128F47DF00096809A /* SurveyMadeView.swift */,
 			);
 			path = Made;
 			sourceTree = "<group>";
@@ -388,7 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				111245B228F47DF00096809A /* MainMadeView.swift in Sources */,
+				111245B228F47DF00096809A /* SurveyMadeView.swift in Sources */,
 				115BC89928F84E640019B04D /* MainView.swift in Sources */,
 				972A64A6291024FA00E4B8B9 /* Color.swift in Sources */,
 				111245C528F5219C0096809A /* LoginView.swift in Sources */,

@@ -31,7 +31,7 @@ struct MainView: View {
 
                     switch selectedTab {
                     case MenuList.made.rawValue:
-                        MainMadeView()
+                        SurveyMadeView()
                     default:
                         MainTodoView()
                     }
