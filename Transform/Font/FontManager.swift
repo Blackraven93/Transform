@@ -13,3 +13,5 @@ class FontManager {
         static let medium = "Poppins-Medium"
     }
 }
+
+
