@@ -13,12 +13,13 @@ struct ContentView: View {
     
     var body: some View {
         ZStack{
-            if log_Status{
-                MainView()
-            }
-            else{
-                LoginView()
-            }
+            MainView()
+//            if log_Status{
+//                MainView()
+//            }
+//            else{
+//                LoginView()
+//            }
         }
     }
 }

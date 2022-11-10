@@ -1,5 +1,5 @@
 //
-//  FontManager.swift
+//  PlusFont.swift
 //  Transform
 //
 //  Created by SeongHoon Jang on 2022/10/29.
@@ -22,7 +22,6 @@ extension Font {
     enum Poppins {
         case semibold
         case medium
-        case custom(String)
         
         var value: String {
             switch self {
@@ -30,13 +29,11 @@ extension Font {
                 return "Poppins-SemiBold"
             case .medium:
                 return "Poppins-Medium"
-            case .custom(let name):
-                return name
             }
         }
     }
 
-    static func poppins(_ type: Poppins, size: CGFloat = 17) -> Font {
+    static func poppins(_ type: Poppins, size: CGFloat) -> Font {
         return .custom(type.value, size: size)
     }
 }
