@@ -16,9 +16,10 @@
 		111245C228F51FE40096809A /* LoginViewMoel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111245C128F51FE40096809A /* LoginViewMoel.swift */; };
 		111245C528F5219C0096809A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111245C428F5219C0096809A /* LoginView.swift */; };
 		112660EF290D1E4200009E30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 112660EE290D1E4200009E30 /* GoogleService-Info.plist */; };
-		112660F3290D3FD300009E30 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112660F2290D3FD300009E30 /* FontManager.swift */; };
 		112660F7290D468A00009E30 /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112660F6290D468A00009E30 /* TabBarButton.swift */; };
 		115BC89928F84E640019B04D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115BC89828F84E640019B04D /* MainView.swift */; };
+		11C1390F2920076000B66280 /* +Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C1390E2920076000B66280 /* +Color.swift */; };
+		11C139112920076500B66280 /* +Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C139102920076500B66280 /* +Font.swift */; };
 		97296CC528E7407200693F59 /* TransformApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97296CC428E7407200693F59 /* TransformApp.swift */; };
 		97296CC728E7407200693F59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97296CC628E7407200693F59 /* ContentView.swift */; };
 		97296CC928E7407500693F59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97296CC828E7407500693F59 /* Assets.xcassets */; };
@@ -53,11 +54,12 @@
 		111245C428F5219C0096809A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		111245C828F574860096809A /* Transform.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Transform.entitlements; sourceTree = "<group>"; };
 		112660EE290D1E4200009E30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		112660F2290D3FD300009E30 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		112660F4290D3FEE00009E30 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		112660F5290D3FF600009E30 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		112660F6290D468A00009E30 /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		115BC89828F84E640019B04D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		11C1390E2920076000B66280 /* +Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "+Color.swift"; sourceTree = "<group>"; };
+		11C139102920076500B66280 /* +Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "+Font.swift"; sourceTree = "<group>"; };
 		97296CC128E7407200693F59 /* Transform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97296CC428E7407200693F59 /* TransformApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformApp.swift; sourceTree = "<group>"; };
 		97296CC628E7407200693F59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -153,7 +155,6 @@
 		112660F0290D3F7E00009E30 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				112660F2290D3FD300009E30 /* FontManager.swift */,
 				112660F4290D3FEE00009E30 /* Poppins-SemiBold.ttf */,
 				112660F5290D3FF600009E30 /* Poppins-Medium.ttf */,
 			);
@@ -174,6 +175,15 @@
 				111245B128F47DF00096809A /* MainMadeView.swift */,
 			);
 			path = Made;
+			sourceTree = "<group>";
+		};
+		11C1390D2920074F00B66280 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				11C1390E2920076000B66280 /* +Color.swift */,
+				11C139102920076500B66280 /* +Font.swift */,
+			);
+			path = Extention;
 			sourceTree = "<group>";
 		};
 		97296CB828E7407200693F59 = {
@@ -199,6 +209,7 @@
 		97296CC328E7407200693F59 /* Transform */ = {
 			isa = PBXGroup;
 			children = (
+				11C1390D2920074F00B66280 /* Extention */,
 				112660ED290D1E2600009E30 /* Config */,
 				111245C828F574860096809A /* Transform.entitlements */,
 				111245C028F51FC90096809A /* ViewModels */,
@@ -381,10 +392,11 @@
 				115BC89928F84E640019B04D /* MainView.swift in Sources */,
 				111245C528F5219C0096809A /* LoginView.swift in Sources */,
 				112660F7290D468A00009E30 /* TabBarButton.swift in Sources */,
+				11C139112920076500B66280 /* +Font.swift in Sources */,
 				111245B028F47DE20096809A /* MainTodoView.swift in Sources */,
-				112660F3290D3FD300009E30 /* FontManager.swift in Sources */,
 				111245B428F47E2E0096809A /* Survey.swift in Sources */,
 				97296CC728E7407200693F59 /* ContentView.swift in Sources */,
+				11C1390F2920076000B66280 /* +Color.swift in Sources */,
 				97296CC528E7407200693F59 /* TransformApp.swift in Sources */,
 				111245C228F51FE40096809A /* LoginViewMoel.swift in Sources */,
 			);
@@ -547,7 +559,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Transform/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9FDS8R22C5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -583,7 +595,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Transform/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9FDS8R22C5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
